@@ -1,3 +1,4 @@
+import { Float32Vector3 } from 'vector';
 export interface Matrix {
     readonly values: Float32Array;
     toString(): string;
@@ -35,4 +36,5 @@ export declare class Matrix4x4 implements Matrix {
     rotateX(radian: number): Matrix4x4;
     rotateY(radian: number): Matrix4x4;
     rotateZ(radian: number): Matrix4x4;
+    static lookAt(cameraPosition: Float32Vector3, lookAtPosition: Float32Vector3, cameraUp: Float32Vector3): Matrix4x4;
 }
