@@ -39,10 +39,10 @@ describe('Matrix4', () => {
         const actual = matrix.translate(1, 2, 3);
 
         const expectMatrix = new Matrix4x4(
-             1,  2,  3,   4,
-            11, 12, 13,  14,
-            21, 22, 23,  24,
-            86, 92, 98, 104
+              1,   2,   3,   4,
+             11,  12,  13,  14,
+             21,  22,  23,  24,
+            117, 124, 131, 138,
         );
 
         expect(actual.values).toEqual(expectMatrix.values);
